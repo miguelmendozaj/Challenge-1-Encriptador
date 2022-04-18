@@ -1,0 +1,177 @@
+/* se define el color de fondo de la pagina */
+body{    
+    margin: 0;
+    padding: 0;
+    background: #EFF1FA;
+}
+
+/* se define el color y posición del contenedor */
+.container{
+    margin: auto; 
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+/* definimos la ubicación y tamaño del logo */
+.logo{
+    width: 100px;
+    float: left;
+}
+
+/* se definen propiedades del panel izquierdo*/
+.ladoIzquierdo{
+    float: left;
+    width: 70%;    
+    height: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    background: #EFF1FA;
+}
+
+/* se definen propiedades del panel derecho*/
+.ladoDerecho{
+    float: right;
+    width: 30%;
+    height: auto;  
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+/* Se definen las propiedades del input */
+#ingresarTexto{
+    float: left;
+    margin-left: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    height: 550px;
+    color: #0A3871;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #EFF1FA;
+}
+
+/* se define el espacio donde estaran los botones */
+.botonera{
+    float: left;
+    width: 70%;
+    height: auto;
+    background: #EFF1FA;
+}
+
+/* Se define la imagen del muneco y sus propiedades*/
+#muneco{
+    width: 90%;
+    height: auto;
+    margin-top: 13%;
+    margin-left: 2%;
+}
+
+/* propiedades del texto que se muestra cuando aun no se ingresa texto*/
+#texto{
+    margin-left: 7%;
+    margin-right: 5%;
+    color: #343A40;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+/* Propiedades del texto dentro del textArea donde se muestra el texto a codificar o decodificar */
+#mensaje{
+    float: left;
+    margin-left: 10%;
+    color: #495057;
+    width: 80%;
+    height: 60%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Se da estilo al btn encriptar*/
+#encriptar{
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    margin-left: 10%;
+    background: #0A3871;
+    color: #FFFFFF;
+    font-weight: regular;
+    font-size: 18px;
+}
+
+/* cambiar colores al momento de pasar el mouse por encima del btn encriptar */
+#encriptar:hover{
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+/* Se da estilo al btn desencriptar*/
+#desencriptar{
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    margin-left: 4%;
+    margin-right: 10%;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-weight: regular;
+    font-size: 18px;
+}
+
+/* cambiar colores al momento de pasar el mouse por encima del btn desencriptar */
+#desencriptar:hover{
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+/* Damos el estilo al botón copiar*/
+#copiar{
+    padding: 24px;
+    width: 40%;
+    height: 10%;
+    border-radius: 24px;
+    margin-left: 33%;
+    margin-top: 90%;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-weight: regular;
+    font-size: 18px;
+    display: none;
+}
+
+/* cambiamos el color al momento de pasar el mouse por encima del botón copiar */
+#copiar:hover{
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+/* damos formato al mensaje de advertencia de solo letras minusculas y sin acentos*/
+.msjAdvertencia{
+    margin-left: 8%;
+    margin-top: 34%;
+}
+
+/* Se agregan datos el pie de la pagina*/
+.redes{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 5%;
+    background: #CED4DA;
+    border-radius: 8px;
+    padding: 1px;
+}
+
+.redes a img{
+    width: 15px;
+}
