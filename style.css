@@ -18,6 +18,7 @@ body{
     width: 100px;
     float: left;
 }
+   
 
 /* se definen propiedades del panel izquierdo*/
 .ladoIzquierdo{
@@ -30,6 +31,16 @@ body{
     background: #EFF1FA;
 }
 
+/* se agrega media query para que el panel izquierdo se muestre en dispositivos moviles */
+@media screen and (max-width: 600px) {
+    .ladoIzquierdo{
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
 /* se definen propiedades del panel derecho*/
 .ladoDerecho{
     float: right;
@@ -37,6 +48,14 @@ body{
     height: auto;  
     border-radius: 16px;
     background: #FFFFFF;
+}
+
+/* se agrega media query para que el panel derecho se muestre en dispositivos moviles */
+@media screen and (max-width: 600px) {
+    .ladoDerecho{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* Se definen las propiedades del input */
@@ -54,12 +73,29 @@ body{
     background: #EFF1FA;
 }
 
+/* Se agrega el media query para que el input se muestre en dispositivos moviles */
+@media screen and (max-width: 600px) {
+    #ingresarTexto{
+        width: 100%;
+        height: 220px;
+        margin-left: 0%;
+    }
+}
+
 /* se define el espacio donde estaran los botones */
 .botonera{
     float: left;
     width: 70%;
     height: auto;
     background: #EFF1FA;
+}
+
+/* se agrega media query para que el espacio de botones se muestre en dispositivos moviles */
+@media screen and (max-width: 600px) {
+    .botonera{
+        width: 100%;
+        height: 100%;
+    }    
 }
 
 /* Se define la imagen del muneco y sus propiedades*/
@@ -107,6 +143,15 @@ body{
     font-size: 18px;
 }
 
+/* se agrega media query para que el btn encriptar se muestre en dispositivos moviles */
+@media screen and (max-width: 600px) {
+    #encriptar{
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
+    }
+}
+
 /* cambiar colores al momento de pasar el mouse por encima del btn encriptar */
 #encriptar:hover{
     background: #D8DFE8;
@@ -125,6 +170,16 @@ body{
     color: #0A3871;
     font-weight: regular;
     font-size: 18px;
+}
+
+/* se agrega media query para que el btn desencriptar se muestre en dispositivos moviles */
+@media screen and (max-width: 600px) {
+    #desencriptar{
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 }
 
 /* cambiar colores al momento de pasar el mouse por encima del btn desencriptar */
@@ -146,6 +201,16 @@ body{
     font-weight: regular;
     font-size: 18px;
     display: none;
+}
+
+/* se agrega media query para que el botón copiar se muestre en dispositivos moviles */
+@media screen and (max-width: 600px) {
+    #copiar{
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
 }
 
 /* cambiamos el color al momento de pasar el mouse por encima del botón copiar */
@@ -172,6 +237,8 @@ body{
     padding: 1px;
 }
 
+/* se asigna tamaño a los iconos de las redes sociales del footer */
 .redes a img{
     width: 15px;
 }
+
