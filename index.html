@@ -4,49 +4,72 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <!-- se anexa el meta tag para el responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- se agrega el source de javascript -->
     <script type="text/javascript" src="javascript.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function sololetras(e){
+            key=e.keyCode || e.which;
+            teclado=String.fromCharCode(key).toLowerCase();
+            letras="abcdefghijklmnopqrstwxyz";
+            especiales="8-37-38-46-164";
+            teclado_especial=false;
+            for(var i in especiales){
+                if(key==especiales[i]){
+                    teclado_especial=true;
+                    break;
+                }
+            }
+            if(letras.indexOf(teclado)==-1 && !teclado_especial){
+                return false;
+            }
+        }
+    </script>
+    <!-- se agrega el titulo de la pagina -->
     <title>Challenge 1 Codificador de texto</title>
 </head>
 <body>
+    <!-- se el contenedor donde se crean los componentes de la pagina -->
     <div class = "container">
+        <!-- logotipo -->
         <div class = "logotipo">
             <img src="imagenes/logo2x.png" alt="logo2x.png">
         </div>
-        
+        <!-- panel izquierdo donde se ingresara el texto a encriptar/desencriptar -->
         <div class = "ladoIzquierdo">
             <textarea id="ingresarTexto" type="text" placeholder="Escribe aquí tu texto" autofocus></textarea>
         </div>
-
+        <!-- panel derecho donde se mostrara el texto encriptado/desencriptado y la imagen del muñeco-->
         <div class = "ladoDerecho">
             <img src=" imagenes/muneco2x.png" alt="muneco2x.png" id="muneco">
            <h1 id="texto">Ningún mensaje fue encontrado</h1> 
            <textarea name="name" id="mensaje" cols="80" rows="8" placeholder="Ingresa el texto que deseas encriptar o desencriptar"></textarea>
+           <!-- botón para copiar el texto -->
            <button id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
         </div>    
-
+        <!-- mensaje a usuario con las restricciones-->
         <div class = "msjAdvertencia">
             <img src="imagenes/exclamacion.png">  Solo letras minúsculas y sin acentos
             <br><br>
         </div>
-        
+        <!-- donde se ubicaran los botones para encriptar/desencriptar -->
         <div class = "botonera">
             <button type="boton" id="encriptar" onclick="encriptar()">Encriptar</button>
             <button type="boton" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
         </div>
-
+        <!-- footer/pie de pagina -->
         <footer class = "redes">
             <p class="pieDePagina">&copy; 2020 | Alura - Oracle | Challenge 1: Codificador de texto | Creado por Miguel A. Mendoza</p>
             <div class = "redesFooter">
+               <!-- se agregan las redes sociales con imágenes y links a cada una de ellas--> 
                 <a target="_blank" href="https://github.com/miguelmendozaj"><img src="imagenes/github.png" alt="Github"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/miguel-mendoza-aa6a651ab/"><img src="imagenes/linkedin.png" alt="LinkedIn"></a>
                 <a target="_blank" href="https://www.instagram.com/mikee_mj/"><img src="imagenes/instagram.png" alt="Instagram"></a>
-            </div>
-            
+            </div>            
         </footer>
-
     </div>
 </body>
 </html>

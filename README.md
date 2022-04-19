@@ -1,7 +1,7 @@
+# Alura Latam y Oracle
+# 🔏 Challenge 1 : Encriptador de texto 
 
-# 🔏 Challenge 1 : Encriptador de texto | Alura Latam + Oracle
-
-<div align="center"><img src="imagenes/logo2x.png" width="64"/></div>
+<div align="center"><img src="imagenes/logo2x.png" width="90"/></div>
 
 <div align="center">
     <img src="https://img.shields.io/badge/JavaScript-5A5A5A?logo=javascript&logoColor=yelllow"/>
@@ -12,8 +12,6 @@
 ---
 
 ## 💡 Descripción
-
-¡Bienvenidos y Bienvenidas a nuestro primer desafío!
 
 Mas que un encriptador, se trata de un codificador de texto con el cual podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
