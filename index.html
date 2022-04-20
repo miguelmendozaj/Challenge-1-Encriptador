@@ -22,7 +22,8 @@
         </div>
         <!-- panel izquierdo donde se ingresara el texto a encriptar/desencriptar -->
         <div class = "ladoIzquierdo">
-            <textarea id="ingresarTexto" type="text" placeholder="Escribe aquí tu texto" autofocus></textarea>
+            <!--- creamos una condicion para que solo se escriban minúsculas aunque el usuario use mayúsculas -->
+            <textarea id="ingresarTexto" onkeyup="javascript:this.value=this.value.toLowerCase();" "type="text" placeholder="Escribe aquí tu texto" autofocus></textarea>
         </div>
         <!-- panel derecho donde se mostrara el texto encriptado/desencriptado y la imagen del muñeco-->
         <div class = "ladoDerecho">
