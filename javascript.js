@@ -6,7 +6,7 @@
 `La letra "u" es convertida para "ufat"`
 */
 
-/* creamos la funcion para encriptar*/
+/* creamos la función para encriptar*/
 function encriptar(cadena){
     // Declaramos la variable y modificamos para que el texto sea convertido a minúsculas
     var cadena_encriptada = document.getElementById("ingresarTexto").value.toLowerCase();
@@ -23,10 +23,12 @@ function encriptar(cadena){
     document.getElementById("mensaje").innerHTML = cadena_encriptada_final;
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
+    // se limpia el texto
+    document.getElementById("ingresarTexto").value = "";
 }
 
 
-// creamos la funcion para desencriptar
+// creamos la función para desencriptar
 function desencriptar(cadena){
     // Declaramos la variable y modificamos para que el texto sea convertido a minúsculas
     var cadena_encriptada = document.getElementById("ingresarTexto").value.toLowerCase();
@@ -43,14 +45,14 @@ function desencriptar(cadena){
     document.getElementById("mensaje").innerHTML = cadena_encriptada_final;
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
+    // se limpia el texto
+    document.getElementById("ingresarTexto").value = "";
 }
-
 
 // Creamos función para el botón copiar
 function copiar(){
     var contenido = document.querySelector("#mensaje");
     contenido.select();
     document.execCommand("copy");
-    alert("Mensaje copiado con éxito");
+    alert("Texto copiado");
 }
-

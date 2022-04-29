@@ -23,15 +23,15 @@
         <!-- panel izquierdo donde se ingresara el texto a encriptar/desencriptar -->
         <div class = "ladoIzquierdo">
             <!--- creamos una condicion para que solo se escriban minúsculas aunque el usuario use mayúsculas -->
-            <textarea id="ingresarTexto" onkeyup="javascript:this.value=this.value.toLowerCase();" "type="text" placeholder="Escribe aquí tu texto" autofocus></textarea>
+            <textarea id="ingresarTexto" onkeyup="javascript:this.value=this.value.toLowerCase();" pattern="[a-z ] "type="text" placeholder="Escribe aquí tu texto" autofocus></textarea>
         </div>
         <!-- panel derecho donde se mostrara el texto encriptado/desencriptado y la imagen del muñeco-->
         <div class = "ladoDerecho">
             <img src=" imagenes/muneco2x.png" alt="muneco2x.png" id="muneco">
            <h1 id="texto">Ningún mensaje fue encontrado</h1> 
-           <textarea name="name" id="mensaje" cols="80" rows="8" placeholder="Ingresa el texto que deseas encriptar o desencriptar"></textarea>
+           <textarea name="name" id="mensaje" cols="80" rows="8" readonly="readonly" placeholder="Ingresa el texto que deseas encriptar o desencriptar"></textarea>
            <!-- botón para copiar el texto -->
-           <button id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+           <button id="copiar" type="button" name="button" onclick="copiar()"git initial>Copiar</button>
         </div>    
         <!-- mensaje a usuario con las restricciones-->
         <div class = "msjAdvertencia">
